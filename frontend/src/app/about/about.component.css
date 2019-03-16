@@ -1,0 +1,36 @@
+
+.background-img{
+    background-color: #181818;
+    background-image: url("../../assets/img/about-background.png");
+    background-size: 70% 100%;
+    background-position: 150% center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 767px){
+    .background-img{
+        background-image: none;
+    }
+
+    h6{
+        text-align: center;
+    }
+    
+}
+
+p,h6{
+    color: #ffffff;
+}
+
+.heading-image{
+    position: absolute;
+    width: 2%;
+    height: auto;
+    left: -1.5%;
+}
+
+@media(max-width: 991px){
+    .heading-image{
+        display: none;
+    }
+}

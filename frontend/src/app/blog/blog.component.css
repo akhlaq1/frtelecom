@@ -1,0 +1,26 @@
+.blog-container{
+    height: 70vh;
+    background-color: #181818;
+}
+
+.container{
+    height: 100%;
+}
+
+.blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.blog>h1{
+    color: #ffffff;
+    font-size: 3em;
+}
+
+@media (max-width: 500px){
+    .blog>h1{
+        font-size: 2em;
+    }    
+}

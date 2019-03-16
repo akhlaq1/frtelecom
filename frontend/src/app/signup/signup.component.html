@@ -1,0 +1,89 @@
+<section class="login_wrapper row">
+  <!-- <div class="left_part col-lg-6">
+    <div class="video-container">
+      <video controls loop autoplay>
+        <source src="../../assets/video/loginmovie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div> -->
+  <div class="right_part">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6"></div>
+        <div class="col-lg-6">
+
+          <div class="form-container">
+            <div class="transparent-background">
+              <h4 class="text-center bg-dark color-white p-3 mb-0">Sign Up</h4>
+
+              <!-- Success message -->
+              <div class="mt-1 mr-1 ml-1 alert alert-success success" *ngIf="showSucessMessage">
+                Sign Up successfully, please login now.
+              </div>
+
+              <!-- Error message -->
+              <div class="mt-1 mr-1 ml-1 alert alert-danger" *ngIf="serverErrorMessages">
+                <div *ngFor="let error of serverErrorMessages">
+                  {{error}}
+                </div>
+              </div>
+
+              <div class="pl-5 pr-5 pt-3 pb-3">
+
+                <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+                  <div class="form-group">
+                    <input type="text" formControlName="firstName" placeholder='First Name' [ngClass]="{'is-valid': signUpForm.controls.firstName.valid && (signUpForm.controls.firstName.dirty || !signUpForm.controls.firstName.pristine), 'is-invalid': signUpForm.controls.firstName.invalid && (signUpForm.controls.firstName.dirty || !signUpForm.controls.firstName.pristine)}">
+                    <div *ngIf="signUpForm.controls.firstName.invalid && (signUpForm.controls.firstName.dirty || !signUpForm.controls.firstName.pristine)"
+                      class="error">
+                      <div *ngIf="signUpForm.controls.firstName.errors.required">First name is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" formControlName="lastName" placeholder="Last Name" [ngClass]="{'is-valid': signUpForm.controls.lastName.valid && (signUpForm.controls.lastName.dirty || !signUpForm.controls.lastName.pristine), 'is-invalid': signUpForm.controls.lastName.invalid && (signUpForm.controls.lastName.dirty || !signUpForm.controls.lastName.pristine)}">
+                    <div *ngIf="signUpForm.controls.lastName.invalid && (signUpForm.controls.lastName.dirty || !signUpForm.controls.lastName.pristine)"
+                      class="error">
+                      <div *ngIf="signUpForm.controls.lastName.errors.required">Last Name is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" formControlName="email" placeholder="Email" [ngClass]="{'is-valid': signUpForm.controls.email.valid && (signUpForm.controls.email.dirty || !signUpForm.controls.email.pristine), 'is-invalid': signUpForm.controls.email.invalid && (signUpForm.controls.email.dirty || !signUpForm.controls.email.pristine)}">
+                    <div *ngIf="signUpForm.controls.email.invalid && (signUpForm.controls.email.dirty || !signUpForm.controls.email.pristine)"
+                      class="error">
+                      <div *ngIf="signUpForm.controls.email.errors.required">Email is required</div>
+                      <div *ngIf="signUpForm.controls.email.errors.email">Email is not valid</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" appNumberOnly formControlName="phone" placeholder="Phone number">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" formControlName="password" placeholder="Password" [ngClass]="{'is-valid': signUpForm.controls.password.valid && (signUpForm.controls.password.dirty || !signUpForm.controls.password.pristine), 'is-invalid': signUpForm.controls.password.invalid && (signUpForm.controls.password.dirty || !signUpForm.controls.password.pristine)}">
+                    <div *ngIf="signUpForm.controls.password.invalid && (signUpForm.controls.password.dirty || !signUpForm.controls.password.pristine)"
+                      class="error">
+                      <div *ngIf="signUpForm.controls.password.errors.required">Password is required</div>
+                      <div *ngIf="signUpForm.controls.password.errors.minlength">Password must be atleast
+                        {{signUpForm.controls.password.errors.minlength.requiredLength}} character long</div>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-block">
+                    <span *ngIf="!loading">Sign Up</span>
+                    <span *ngIf="loading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <span *ngIf="loading" class="sr-only">Loading...</span>
+                  </button>
+
+                  <span class="no_account_text">Already registered user?<a [routerLink]="['/login']">login
+                      here</a></span>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>

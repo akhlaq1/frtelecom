@@ -1,0 +1,47 @@
+/************ service-team Style *************/
+#tradeshows {
+	padding: 40px 0px 40px 0px;
+}
+
+#tradeshows h3 {
+	color:#009adb;
+	font-size:36px;
+	font-weight:900;
+	text-transform:uppercase;
+	margin-bottom:20px;
+}
+
+#tradeshows h6 span {
+	color:#7bcf20;
+}
+
+#whitetradeshows {
+	color: white;
+}
+
+#tradeshows h4 {
+	color:#181818;
+	font-size:18px;
+	font-weight:900;
+	text-transform:uppercase;
+}
+
+#tradeshows p {
+	margin:0px;
+}
+
+#tradeshows .s-right {
+	padding-right:50px;
+	padding-bottom:60px;
+}
+
+#tradeshows .s-left {
+	padding-left:50px;
+	padding-bottom:60px;
+}
+
+@media (max-width: 575px){
+    #tradeshows {
+		padding: 40px;
+	}
+}

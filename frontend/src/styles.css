@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+.dropdown-item:focus{
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #0275d8 !important;
+}
+.blue-active {
+    background: #009adb;
+    color: #181818 !important;
+}
+@media(max-width: 575px){
+    .bx-viewport{
+        height: 401px !important;
+    }
+    #welcome-text.home{
+        background-size: 115px !important;
+    }
+}
+
+.pac-logo:after {
+    background-image: none !important;
+    height: 0px;
+  }
+  

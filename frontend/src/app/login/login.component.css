@@ -1,0 +1,130 @@
+
+/** For New Contacts **/
+
+#three-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+span.no_account_text {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+.login_wrapper {
+    position: relative;
+    background: #000;
+    margin: 0;
+}
+
+.center_logo{
+    background-image: url("../../assets/img/loginlogo2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 175px;
+    background-size: 230px;
+    border: 2px solid #7bcf20;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 19px;
+}
+.login_wrapper .left_part {
+    background-color: #181818;
+    padding: 0;
+}
+
+.login_wrapper .right_part {
+    padding: 6.95% 85px;
+    background-image: url("../../assets/img/bg-blue.jpg");
+}
+
+header a.nav-link {
+    color: #fff;
+}
+
+header.bd-navbar {
+    min-height: 4rem;
+    background-color: #563d7c;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+}
+
+.contact_list_area {
+    padding: 45px;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.transparent-background{
+    background-color: rgba(0,0,0,0.35);
+}
+
+.color-white{
+    color: #fff;
+}
+
+.bg-dark{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.validation-message{
+    color: #efefef;
+    margin-bottom: 0;
+}
+
+.input-icon>input{
+    background-color: rgba(226, 226, 226, 0.9);
+    color: #000;
+    padding-left: 30px;
+    margin-bottom: 0;
+}
+
+.input-icon>input::placeholder{ 
+    color: #000;
+}
+
+.input-icon{
+    position: relative;
+}
+
+.input-icon>i{
+    margin-left: 10px;
+    top: 30%;
+    position: absolute;
+    font-size: 15px;
+}
+
+span>a{
+    font-weight: bold;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+  
+.video-container>video {
+    width: 100%;
+}
+
+.error{
+    font-size: 0.8em;
+    color: #ffffff;
+    background-color: transparent;
+  }
